@@ -1,0 +1,216 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+section {
+    background-color: rgb(132, 154, 173);
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+/*header*/
+header h1 {
+    font-size: 80px;
+    margin: 2px;
+    font-family: bungee;
+}
+
+header div {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: bungee;
+}
+
+/*main*/
+ul li {
+    max-width: 400px; 
+    overflow-wrap: break-word; 
+}
+
+main ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(73, 105, 107);
+    color: #ffffffef;
+    padding: 5px 15px;
+    margin: 5px 0;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.editar {
+    cursor: pointer;
+}
+
+.botão-excluir {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 45px;
+    cursor: pointer; 
+}
+
+li input {
+    display: none;
+}
+
+li label {
+    width: 25px;
+    height: 25px;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+input:checked + label {
+    background-color: aqua;
+}
+
+input:checked + label::after {
+    content: '✔';
+    font-size: 16px;
+    color: black;
+}
+
+/*footer*/
+#progresso-bar {
+    width: 75%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    border-radius: 10px
+}
+
+#progresso {
+    width: 0%;
+    height: 60px;
+    background-color: brown;
+    border-radius: 10px;
+    transition: all 620ms;
+}
+
+#texto-progresso {
+    position: absolute;
+    top: 30%;
+    left: 46%;
+    color: #0000004f;
+    font-size: 18px;
+}
+
+footer {
+    display: flex;
+    margin-top: 15px;
+}
+
+footer button {
+    width: 25%;
+    margin-left: 19px;
+    border-radius: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: rgb(73, 105, 107);;
+    color: white;
+    border: none;
+}
+
+footer button:hover {
+    background-color: rgb(55, 85, 87);
+    transform: scale(1.1); 
+    transition-duration: 0.5s;
+}
+
+footer button:active {
+    transform: scale(0.95);
+    transition-duration: 0.5s;
+}
+
+/*adicionar nova tarefa*/
+form{
+    background-color: rgb(73, 105, 107);
+    border-radius: 10px;
+    padding: 30px;
+    color: #fff;
+    display: none;
+}
+
+#dataHora {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    align-items:center ;
+    margin: 5px;
+    font-size: 16px;
+    font-family: roboto;
+}
+
+#dataHora label, #dataHora input {
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+}
+
+form button {
+    width: 49%;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    font-family: roboto;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+form #addTarefa {
+    width: 98.5%;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    font-family: roboto
+    
+}
+
+#confirmar {
+    background-color: rgb(68, 139, 116);
+}
+
+#cancelar {
+    background-color: brown;
+}
+
+#confirmar:hover {
+    background-color: rgb(42, 85, 71);
+    transform: scale(1.03);
+    transition-duration: 0.5s;
+}
+
+#cancelar:hover {
+    background-color: rgb(95, 24, 24);
+    transform: scale(1.03);
+    transition-duration: 0.5s;
+}
+
+#cancelar:active {
+    transform: scale(0.95);
+    transition-duration: 0.5s;
+}
+
+#confirmar:active {
+    transform: scale(0.95);
+    transition-duration: 0.5s;
+}

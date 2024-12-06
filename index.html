@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="icon" href="./imagens/logo.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section>
+        <header>
+            <h1>MEU DIA</h1>
+            <div>
+            </div>
+        </header>
+
+        <main>  
+        </main>
+        
+        <form>
+            <input type="text" id="addTarefa" placeholder="Adicionar nova tarefa">
+            <div id="dataHora">
+                <label for="datahora">Lembre-me</label>
+                <input type="datetime-local" id="datahora">
+            </div>
+            <div id="dataHora">
+                <label for="dataComclusão">Data de conclusão</label>
+                <input type="month" id="dataComclusão">
+            </div>
+            <div id="dataHora">
+                <label for="repetir">Repetir</label>
+                <input type="week" id="repetir">
+            </div>
+            <div>
+                <button type="submit" id="confirmar"><span class="botaoAdd">Adicionar</span></button>
+                <button type="reset" id="cancelar">Cancelar</button>
+            </div>
+        </form>
+        
+        <footer>
+            <div id="progresso-bar">
+                <div id="progresso">
+                    <span id="texto-progresso">0%</span>
+                </div>
+            </div>
+            <button type="button" title="Adicione uma tarefa">+</button>
+        </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
